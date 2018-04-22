@@ -1,0 +1,299 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<title>Live-tutor Classroom</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.navbar {
+
+    margin-bottom: 0;
+
+    border-radius: 0;
+
+    /* background-color; he put it purple make it stay gray or change to dark gray */
+
+    color: #474747; /* text color */
+
+    padding: 1% 0;
+
+    font-size: 1.2em;  /* This increases text font */
+
+    border: 0; /* the black thing */
+
+}
+
+.navbar-brand {
+
+    float: left;
+
+    min-height: 55px;
+
+    padding: 0 15px 5px;
+
+}
+
+.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+
+    color: #FFF;
+
+    background-color: #222222; /* for the black thing in home */ /* #232323 try to change later on if it does not match with anything else */
+
+}
+
+.navbar-inverse .navbar-nav li a { color: #D5D5D5; /* text color?? */ }
+
+.btn { /* LOGIN button */
+
+    font-size: 18px;
+
+    color: #FFF;
+
+    padding: 12px 22px;
+
+    background: #000000;
+
+    border: 2px solid #FFF;
+
+}
+
+#icon {
+
+    max-width: 200px; /* to change the size of 3 images */
+
+    margin: 1% auto;
+
+    margin-top: 30px;
+
+    margin-bottom: 26px;
+
+}
+
+footer {
+
+    width: 100%;
+
+    background-color: #222;
+
+    padding: 5%;
+
+    color: #FFF;
+
+}
+
+.fa {
+
+    padding: 15px; /* social media pics size */
+
+    font-size: 25px;
+
+    color: #FFF;
+
+}
+
+.fa:hover {
+
+    color: #D5D5D5;
+
+    text-decoration: none;
+
+}
+
+ 
+
+@media (max-width: 900px) {
+
+.fa {
+
+    font-size: 20px;
+
+    padding: 10px;
+
+}
+
+}
+
+ 
+
+@media (max-width: 600px) {  /* this is to not show the getting started buttons and header on mobile */
+
+#icon { max-width: 150px; }
+
+h2 { /* h4 size in mobile */ font-size: 1.7em; }
+
+}
+
+body {
+
+    height: 100%;
+
+    /**FULL SCREEN BACKGROUND IMAGE**/
+
+    background: url(https://placeimg.com/1200/500/tech) no-repeat center center fixed;
+
+    background-size: cover;
+
+}
+
+.center-block { float: none; }
+
+ 
+
+form {
+
+    margin: 15% auto 15% auto;
+
+    padding: 5%;
+
+    background: rgba(0,0,0,0.7);
+
+    color: #FFF;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!--TOP NAVIGATION-->
+
+<nav class="navbar navbar-inverse">
+
+<div class="container-fluid">
+
+<div class="navbar-header">
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+
+<!--BRAND-->
+
+<a class="navbar-brand" href="indexReference.html"><img src="img/logo.png"></a> </div>
+
+<div class="collapse navbar-collapse" id="myNavbar">
+
+<ul class="nav navbar-nav navbar-right">
+
+<li class="active"><a href="https://live-tutor.com">Home</a></li>
+
+<li><a href="https://live-tutor.com/about-us">About</a></li>
+
+<li><a href="https://live-tutor.com/courses">Courses</a></li>
+
+<li><a href="https://live-tutor.com/contact">Contacts</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+ 
+
+<!--LOGIN FORM-->
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-6 center-block">
+
+<form action="YOUR_LOGIN_SCRIPT.php">
+
+<h3 class="text-center"><img class="img-circle" src="https://placeimg.com/75/75/tech" alt="logo"> Log-In</h3>
+
+<div class="form-group">
+
+<label for="Email">Email address</label>
+
+<input type="email" class="form-control" id="Email" placeholder="you@domain.com">
+
+</div>
+
+<div class="form-group">
+
+<label for="Password">Password:</label>
+
+<input type="password" class="form-control" id="Password" placeholder="8 characters">
+
+</div>
+
+<button type="submit" class="center-block btn btn-lg btn-primary">Log-in</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+ 
+
+<!--FOOTER-->
+
+<footer class="container-fluid text-center">
+
+<div class="row">
+
+<div class="col-sm-4">
+
+<h3>Contact Us</h3>
+
+<address>
+
+Our Address and contact info here.
+
+</address>
+
+</div>
+
+<!-- SOCIAL ICONS -->
+
+<div class="col-sm-4">
+
+<h3>Connect</h3>
+
+<a href="https://www.facebook.com/LiveTutorIndia/" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a> <a href="https://instagram.com/livetutorind" class="fa fa-instagram"></a> <a href="https://www.youtube.com/user/TheLivetutor/" class="fa fa-youtube"></a>
+
+<h3>©2018 CSS Studios</h3>
+
+</div>
+
+<div class="col-sm-4"> <img src="img/bunny.png" class="icon"> </div>
+
+</div>
+
+</footer>
+
+ 
+
+<!--latest jQuery 3-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+ 
+
+<!--Bootstrap-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<form action="YOUR_LOGIN_SCRIPT.php">
