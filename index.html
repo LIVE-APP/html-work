@@ -1,299 +1,746 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<title>Live-tutor Classroom</title>
+	<title>live-Talk</title>
 
-<meta charset="utf-8">
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
 
-<style>
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 
-.navbar {
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
 
-    margin-bottom: 0;
-
-    border-radius: 0;
-
-    /* background-color; he put it purple make it stay gray or change to dark gray */
-
-    color: #474747; /* text color */
-
-    padding: 1% 0;
-
-    font-size: 1.2em;  /* This increases text font */
-
-    border: 0; /* the black thing */
-
-}
-
-.navbar-brand {
-
-    float: left;
-
-    min-height: 55px;
-
-    padding: 0 15px 5px;
-
-}
-
-.navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-
-    color: #FFF;
-
-    background-color: #222222; /* for the black thing in home */ /* #232323 try to change later on if it does not match with anything else */
-
-}
-
-.navbar-inverse .navbar-nav li a { color: #D5D5D5; /* text color?? */ }
-
-.btn { /* LOGIN button */
-
-    font-size: 18px;
-
-    color: #FFF;
-
-    padding: 12px 22px;
-
-    background: #000000;
-
-    border: 2px solid #FFF;
-
-}
-
-#icon {
-
-    max-width: 200px; /* to change the size of 3 images */
-
-    margin: 1% auto;
-
-    margin-top: 30px;
-
-    margin-bottom: 26px;
-
-}
-
-footer {
-
-    width: 100%;
-
-    background-color: #222;
-
-    padding: 5%;
-
-    color: #FFF;
-
-}
-
-.fa {
-
-    padding: 15px; /* social media pics size */
-
-    font-size: 25px;
-
-    color: #FFF;
-
-}
-
-.fa:hover {
-
-    color: #D5D5D5;
-
-    text-decoration: none;
-
-}
-
- 
-
-@media (max-width: 900px) {
-
-.fa {
-
-    font-size: 20px;
-
-    padding: 10px;
-
-}
-
-}
-
- 
-
-@media (max-width: 600px) {  /* this is to not show the getting started buttons and header on mobile */
-
-#icon { max-width: 150px; }
-
-h2 { /* h4 size in mobile */ font-size: 1.7em; }
-
-}
-
-body {
-
-    height: 100%;
-
-    /**FULL SCREEN BACKGROUND IMAGE**/
-
-    background: url(https://placeimg.com/1200/500/tech) no-repeat center center fixed;
-
-    background-size: cover;
-
-}
-
-.center-block { float: none; }
-
- 
-
-form {
-
-    margin: 15% auto 15% auto;
-
-    padding: 5%;
-
-    background: rgba(0,0,0,0.7);
-
-    color: #FFF;
-
-}
-
-</style>
-
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/background1.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
 
-<!--TOP NAVIGATION-->
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
 
-<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="img/logo.png" alt="logo">
+							<img class="logo-alt" src="img/logo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
 
-<div class="container-fluid">
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
 
-<div class="navbar-header">
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#service">Services</a></li>
+										<li><a href="#contact">Contact</a></li>
+					<li><a href="#pricing">Get the Live-Talk App</a></li>
+					<li><a href="#blog">Login</a></li>
+				</ul>
+				<!-- /Main navigation -->
 
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+		</nav>
+		<!-- /Nav -->
 
-<!--BRAND-->
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
 
-<a class="navbar-brand" href="indexReference.html"><img src="img/logo.png"></a> </div>
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">We Are Creative Makers</h1>
+							<p class="white-text">Imagine a world where it is as simple to message or video call anyone in the world as it is to send them an email
+							<button class="white-btn" onclick="window.location.href='http://192.168.1.27/#/login'">Get Started!</button>
+							<button class="main-btn" onclick="window.location.href='#about'">Learn more</button>
+						</div>
+					</div>
+					<!-- /home content -->
 
-<div class="collapse navbar-collapse" id="myNavbar">
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
 
-<ul class="nav navbar-nav navbar-right">
+	</header>
+	<!-- /Header -->
 
-<li class="active"><a href="https://live-tutor.com">Home</a></li>
+	<!-- About -->
+	<div id="about" class="section md-padding">
 
-<li><a href="https://live-tutor.com/about-us">About</a></li>
+		<!-- Container -->
+		<div class="container">
 
-<li><a href="https://live-tutor.com/courses">Courses</a></li>
+			<!-- Row -->
+			<div class="row">
 
-<li><a href="https://live-tutor.com/contact">Contacts</a></li>
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Welcome to Live-Talk</h2>
+				</div>
+				<!-- /Section header -->
 
-</ul>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>Compatiblity</h3>
+						<p>Our,s initial goal is to fix the problem of fragmented IP communications: letting users message and call each other without having to care what app the other user is on - making it as easy as sending an email.</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<!-- /about -->
 
-</div>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-magic"></i>
+						<h3>Awesome Features</h3>
+						<p>End-to-end Encryption via the Olm and Megolm double ratchet implementation.</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<!-- /about -->
 
-</div>
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Fully Responsive</h3>
+						<p>Enhance productivity with video-ready rooms designed for modern business collaboration</p>
+						<a href="#">Read more</a>
+					</div>
+				</div>
+				<!-- /about -->
 
-</nav>
+			</div>
+			<!-- /Row -->
 
- 
+		</div>
+		<!-- /Container -->
 
-<!--LOGIN FORM-->
+	</div>
+	<!-- /About -->
 
-<div class="container">
 
-<div class="row">
+	<!-- Portfolio -->
+	<div id="portfolio" class="section md-padding bg-grey">
 
-<div class="col-sm-6 center-block">
+		<!-- Container -->
+		<div class="container">
 
-<form action="YOUR_LOGIN_SCRIPT.php">
+			<!-- Row -->
+			<div class="row">
 
-<h3 class="text-center"><img class="img-circle" src="https://placeimg.com/75/75/tech" alt="logo"> Log-In</h3>
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Featured Works</h2>
+				</div>
+				<!-- /Section header -->
 
-<div class="form-group">
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work1.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>E-leraning</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/work1.jpg"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
 
-<label for="Email">Email address</label>
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work2.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Live-Talk</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/work2.jpg"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
 
-<input type="email" class="form-control" id="Email" placeholder="you@domain.com">
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="./img/work3.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Live-Conference</h3>
+						<div class="work-link">
+							<a href="#"><i class="fa fa-external-link"></i></a>
+							<a class="lightbox" href="./img/work3.jpg"><i class="fa fa-search"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
 
-</div>
+			</div>
+			<!-- /Row -->
 
-<div class="form-group">
+		</div>
+		<!-- /Container -->
 
-<label for="Password">Password:</label>
+	</div>
+	<!-- /Portfolio -->
 
-<input type="password" class="form-control" id="Password" placeholder="8 characters">
+	<!-- Service -->
+	<div id="service" class="section md-padding">
 
-</div>
+		<!-- Container -->
+		<div class="container">
 
-<button type="submit" class="center-block btn btn-lg btn-primary">Log-in</button>
+			<!-- Row -->
+			<div class="row">
 
-</form>
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">What we offer</h2>
+				</div>
+				<!-- /Section header -->
 
-</div>
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Edtech Platform For Teachers</h3>
+						<p>User friendly digital classrooms which empowers teacher to deliver contents seamlessly irrespective of subjects .</p>
+					</div>
+				</div>
+				<!-- /service -->
 
-</div>
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-rocket"></i>
+						<h3>Edtech Platform For Institution /Enterprises</h3>
+						<p>White labelled Kaaryin platform under your prestigious brand with the option of API integration.</p>
+					</div>
+				</div>
+				<!-- /service -->
 
-</div>
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-cogs"></i>
+						<h3>Customized Test Engine For Institutions</h3>
+						<p>Either objective or Descriptive deliver hassle free online examination experience with Kaaryin’s robust Testing tool.</p>
+					</div>
+				</div>
+				<!-- /service -->
 
- 
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-diamond"></i>
+						<h3>Marketing</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
 
-<!--FOOTER-->
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-pencil"></i>
+						<h3>Awesome Support</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
 
-<footer class="container-fluid text-center">
+				<!-- service -->
+				<div class="col-md-4 col-sm-6">
+					<div class="service">
+						<i class="fa fa-flask"></i>
+						<h3>Brand Design</h3>
+						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
+					</div>
+				</div>
+				<!-- /service -->
 
-<div class="row">
+			</div>
+			<!-- /Row -->
 
-<div class="col-sm-4">
+		</div>
+		<!-- /Container -->
 
-<h3>Contact Us</h3>
+	</div>
+	<!-- /Service -->
 
-<address>
 
-Our Address and contact info here.
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
 
-</address>
+		<!-- Container -->
+		<div class="container">
 
-</div>
+			<!-- Row -->
+			<div class="row">
 
-<!-- SOCIAL ICONS -->
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Why Choose Us</h2>
+					</div>
+					<p>Privacy is particularly critical for a decentralized network like Matrix, where user data is replicated over all the servers participating in a room and so must be protected. We ensure that only explicitly authorized devices can participate in a conversation..</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Provides 1:1 encrypted channels between pairs of devices via the Olm double ratchet</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Supports multiple devices, tracking verification trust per-device to help spot interception.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Independent implementation released under the Apache License.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>With Status your mobile device becomes a light client, enabling you to access message-box from anywhere.</p>
+					</div>
+				</div>
+				<!-- /why choose us content -->
 
-<div class="col-sm-4">
+				<!-- About slider -->
+				<div class="col-md-6">
+					<div id="about-slider" class="owl-carousel owl-theme">
+						<img class="img-responsive" src="./img/about1.jpg" alt="">
+						<img class="img-responsive" src="./img/about2.jpg" alt="">
+						<img class="img-responsive" src="./img/about1.jpg" alt="">
+						<img class="img-responsive" src="./img/about2.jpg" alt="">
+					</div>
+				</div>
+				<!-- /About slider -->
 
-<h3>Connect</h3>
+			</div>
+			<!-- /Row -->
 
-<a href="https://www.facebook.com/LiveTutorIndia/" class="fa fa-facebook"></a> <a href="#" class="fa fa-twitter"></a> <a href="#" class="fa fa-google"></a> <a href="https://instagram.com/livetutorind" class="fa fa-instagram"></a> <a href="https://www.youtube.com/user/TheLivetutor/" class="fa fa-youtube"></a>
+		</div>
+		<!-- /Container -->
 
-<h3>©2018 CSS Studios</h3>
+	</div>
+	<!-- /Why Choose Us -->
 
-</div>
 
-<div class="col-sm-4"> <img src="img/bunny.png" class="icon"> </div>
+	<!-- Numbers -->
+	<div id="numbers" class="section sm-padding">
 
-</div>
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('./img/background2.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
 
-</footer>
+		<!-- Container -->
+		<div class="container">
 
- 
+			<!-- Row -->
+			<div class="row">
 
-<!--latest jQuery 3-->
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-users"></i>
+						<h3 class="white-text"><span class="counter">451</span></h3>
+						<span class="white-text">Happy clients</span>
+					</div>
+				</div>
+				<!-- /number -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-trophy"></i>
+						<h3 class="white-text"><span class="counter">12</span></h3>
+						<span class="white-text">Awards won</span>
+					</div>
+				</div>
+				<!-- /number -->
 
- 
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-coffee"></i>
+						<h3 class="white-text"><span class="counter">154</span>K</h3>
+						<span class="white-text">Cups of Coffee</span>
+					</div>
+				</div>
+				<!-- /number -->
 
-<!--Bootstrap-->
+				<!-- number -->
+				<div class="col-sm-3 col-xs-6">
+					<div class="number">
+						<i class="fa fa-file"></i>
+						<h3 class="white-text"><span class="counter">45</span></h3>
+						<span class="white-text">Projects completed</span>
+					</div>
+				</div>
+				<!-- /number -->
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Numbers -->
+
+	<!-- Pricing
+	<div id="pricing" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header
+				<div class="section-header text-center">
+					<h2 class="title">Pricing Table</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- pricing 
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Basic plan</span>
+							<div class="price">
+								<h3>$9<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing 
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Silver plan</span>
+							<div class="price">
+								<h3>$19<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->
+
+				<!-- pricing 
+				<div class="col-sm-4">
+					<div class="pricing">
+						<div class="price-head">
+							<span class="price-title">Gold plan</span>
+							<div class="price">
+								<h3>$39<span class="duration">/ month</span></h3>
+							</div>
+						</div>
+						<ul class="price-content">
+							<li>
+								<p>1GB Disk Space</p>
+							</li>
+							<li>
+								<p>100 Email Account</p>
+							</li>
+							<li>
+								<p>24/24 Support</p>
+							</li>
+						</ul>
+						<div class="price-btn">
+							<button class="outline-btn">Purchase now</button>
+						</div>
+					</div>
+				</div>
+				<!-- /pricing -->   
+
+			</div>
+			<!-- Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Pricing -->
+
+
+	<!-- Testimonial 
+	<div id="testimonial" class="section md-padding">
+
+		<!-- Background Image 
+		<div class="bg-img" style="background-image: url('./img/background3.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Container 
+		<div class="container">
+
+			<!-- Row 
+			<div class="row">
+
+				<!-- Testimonial slider 
+				<div class="col-md-10 col-md-offset-1">
+					<div id="testimonial-slider" class="owl-carousel owl-theme">
+
+						<!-- testimonial 
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/perso1.jpg" alt="">
+								<h3 class="white-text">John Doe</h3>
+								<span>Web Designer</span>
+							</div>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+						</div>
+						<!-- /testimonial -->
+
+						<!-- testimonial
+						<div class="testimonial">
+							<div class="testimonial-meta">
+								<img src="./img/perso2.jpg" alt="">
+								<h3 class="white-text">John Doe</h3>
+								<span>Web Designer</span>
+							</div>
+							<p class="white-text">Molestie at elementum eu facilisis sed odio. Scelerisque in dictum non consectetur a erat. Aliquam id diam maecenas ultricies mi eget mauris.</p>
+						</div>
+						<!-- /testimonial 
+
+					</div>
+				</div>
+				<!-- /Testimonial slider 
+
+			</div>
+			<!-- /Row 
+
+		</div>
+		<!-- /Container 
+
+	</div>
+	<!-- /Testimonial -->
+
+	<!-- Team 
+	<div id="team" class="section md-padding">
+
+		
+	<!-- Blog -->
+<!--	<div id="blog" class="section md-padding bg-grey">
+
+	</div> -->
+	<!-- /Blog -->
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>512-421-3940</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>email@support.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>1739 Bubby Drive</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact form -->
+				<div class="col-md-8 col-md-offset-2">
+					<form class="contact-form">
+						<input type="text" class="input" placeholder="Name">
+						<input type="email" class="input" placeholder="Email">
+						<input type="text" class="input" placeholder="Subject">
+						<textarea class="input" placeholder="Message"></textarea>
+						<button class="main-btn">Send message</button>
+					</form>
+				</div>
+				<!-- /contact form -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="img/logo-alt.png" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+
+					<!-- footer follow -->
+					<ul class="footer-follow">
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+					</ul>
+					<!-- /footer follow -->
+
+					<!-- footer copyright -->
+					<div class="footer-copyright">
+						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+					</div>
+					<!-- /footer copyright -->
+
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
 
 </html>
-
-<form action="YOUR_LOGIN_SCRIPT.php">
