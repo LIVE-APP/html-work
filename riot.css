@@ -1,0 +1,22 @@
+.container {
+		text-align: center;
+        line-height: 16;
+		  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+
+}
+.title {
+	text-align: center;
+  vertical-align: middle;
+  font: 40px 'ProximaNovaThin', 'Arial', Helvetica, sans-serif;
+  color: #000;
+  position: relative;
+    z-index: 2;
+}
+.appholder{
+		text-align: center;
+  vertical-align: middle;
+  font: 40px;
+}
