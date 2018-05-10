@@ -1,0 +1,31 @@
+{
+    "default_hs_url": "https://livetalk.live-tutor.com",
+    "default_is_url": "https://vector.im",
+    "disable_custom_urls":true,
+    "disable_guests": true,
+    "disable_login_language_selector": true,
+    "disable_3pid_login": false,
+    "brand": "Live-Tutor",
+    "integrations_ui_url": "https://scalar.vector.im/",
+    "integrations_rest_url": "https://scalar.vector.im/api",
+    "bug_report_endpoint_url": "",
+    "features": {
+        "feature_groups": "labs",
+        "feature_pinning": "labs"
+    },
+    "default_federate": true,
+    "welcomePageUrl": "home.html",
+    "default_theme": "dark",
+    "roomDirectory": {
+        "servers": [
+            "http://livetalk.live-tutor.com"
+        ]
+    },
+    "welcomeUserId": "@ltuser:livetalk.live-tutor.com",
+    "piwik": {
+        "url": "https://piwik.riot.im/",
+        "whitelistedHSUrls": ["https://livetalk.live-tutor.com"],
+        "whitelistedISUrls": ["https://vector.im", "http://livetalk.live-tutor.com"],
+        "siteId": 1
+    }
+}
