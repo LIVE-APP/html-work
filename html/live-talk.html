@@ -2,21 +2,38 @@
 <html>
 <head>
 <title>Live Talk</title>
+
 </head>
-<link type="text/css" rel="stylesheet" href="livetalk.css" />
-<body id="main">
-<script type = "text/javascript" src="osdetect.js"></script>
+<link type="text/css" rel="stylesheet" href="rio/app/livetalk.css" />
+<script>
+function msg() {
+ window.open= "livetalk://open";
+}
+window.onload = msg(); 
+</script>
+<body id="main" onload = "msg()">
 <!--<div class="bg-img" style="background-image: url('./background1.jpg');"></div>
 			<div class="overlay"></div> -->
 			<header id="header"> 
 			<div class="container">
         <div id="logo" class="pull-left">
-	<img class = "logo" src="logo.png" alt="logo"> </img>		
+									<img class = "logo" src="logo.png" alt="logo"> </img>
+
+			<h1><a href="#" class="scrollto"></a></h1>
+		</div>
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+			  <li class="menu-active" ><a href="index.html"><img class = "logo1" src="rio/app/images.png" alt="logo"></a></li></img>
+			  
+          </ul>
+        </nav><!-- #nav-menu-container -->
     </div>
 </header>	  
-<h5 align="center">Your Live Talk App will be started...</h5>
-<p id="link" align="center">Don't see anything <a href="#" id="launch">Launch the APP</a></p>
-<p id="link2" align="center">Already Have The App? <a href="#" id="download">Download Again</a></p>
-<p id="link3" align="center">Can't Launch The App? <a href="index1.html" id="browser">Join With Browser</a></p>
+<h5 align="center">Your Live Talk App will be Downloaded...</h5>
+
+<p id="link" align="center">Download the APP <a href="#"  onclick="msg2()" id="download" >Download</a></p>
+<p id="link2" align="center">Already Have The App? <a href="livetalk://open" id="download">Launchthe APP</a></p>
+<p id="link3" align="center">Can't Download The App? <a href="index1.html" id="browser">Join With Browser</a></p>
 </body>   
+<script type="text/javascript" src="rio/app/alert.js"></script>  
 </html>   

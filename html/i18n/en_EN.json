@@ -741,7 +741,7 @@
     "Create Room": "Create Room",
     "Room name (optional)": "Room name (optional)",
     "Advanced options": "Advanced options",
-    "Block users on other matrix homeservers from joining this room": "Block users on other servers from joining this room",
+    "Block users on other matrix homeservers from joining this room": "Block users on other matrix homeservers from joining this room",
     "This setting cannot be changed later!": "This setting cannot be changed later!",
     "Unknown error": "Unknown error",
     "Incorrect password": "Incorrect password",
